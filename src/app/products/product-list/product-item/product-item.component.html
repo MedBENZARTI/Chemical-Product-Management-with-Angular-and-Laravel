@@ -1,0 +1,25 @@
+<a
+  style="cursor: pointer"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix"
+>
+  <div class="row">
+    <div class="col-sm">
+      <h4 class="list-group-item-heading">{{ product.name }}</h4>
+      <p class="list-group-item-text">{{ product.structure }}</p>
+    </div>
+    <span class="spacer"></span>
+    <div class="col-sm">
+      <img
+        [src]="product.imageUrl"
+        alt="{{ product.name }}"
+        class="img-responsive"
+        style="max-height: 50px"
+      />
+    </div>
+  </div>
+</a>
+<!-- <div class="container">
+
+</div> -->

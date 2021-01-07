@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      [src]="product.imageUrl"
+      alt="{{ product.name }}"
+      class="img-responsive"
+      style="max-height: 300px"
+    />
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ product.name }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm">
+    <table class="table table-sm table-striped table-hover">
+      <tr>
+        <td class="table-primary"><label for="name">name</label></td>
+        <td class="table-primary">{{ product.name }}</td>
+      </tr>
+      <tr>
+        <td><label for="structure">structure</label></td>
+        <td>{{ product.structure }}</td>
+      </tr>
+      <tr>
+        <td class="table-primary">
+          <label for="validationDate">validationDate</label>
+        </td>
+        <td class="table-primary">{{ product.validationDate }}</td>
+      </tr>
+      <tr>
+        <td><label for="pH">pH</label></td>
+        <td>{{ product.pH }}</td>
+      </tr>
+      <tr>
+        <td class="table-primary">
+          <label for="usingConditions">usingConditions</label>
+        </td>
+        <td class="table-primary">{{ product.usingConditions }}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-sm">
+    <div ngbDropdown class="d-inline-block">
+      <button
+        class="btn btn-outline-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Manage Product <span class="caret"></span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>
+          <a style="cursor: pointer" (click)="onEditProduct()">Edit Product</a>
+        </button>
+        <button ngbDropdownItem>
+          <a style="cursor: pointer" (click)="onDeleteProduct()"
+            >Delete Product</a
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------- -->
+
+  <!-- --------- -->
+</div>

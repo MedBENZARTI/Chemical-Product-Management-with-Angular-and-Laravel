@@ -1,0 +1,12 @@
+.spacerr {
+  flex: 1 1 auto;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.btn-space {
+  margin-right: 15px;
+}
