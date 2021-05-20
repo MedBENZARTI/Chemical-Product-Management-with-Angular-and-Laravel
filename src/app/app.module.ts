@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { DropdownDirective } from './shared/dropdown.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsComponent } from './products/products.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
@@ -24,7 +23,6 @@ import { HttpClientModule } from '@angular/common/http';
     ProductListComponent,
     ProductDetailComponent,
     ProductItemComponent,
-    DropdownDirective,
     PageNotFoundComponent,
     ProductStartComponent,
     ProductEditComponent,

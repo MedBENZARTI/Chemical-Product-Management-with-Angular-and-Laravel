@@ -75,6 +75,4 @@ export class ProductService {
     this.products.splice(index, 1);
     this.productsChanged.next(this.products.slice());
   }
-  // addIngredientsToShoppingList(ingredients: Ingredient[]) {
-  //   this.slService.addIngredients(ingredients);
 }
